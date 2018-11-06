@@ -1,0 +1,741 @@
+.header{
+  background-color: #fff;
+  height: 103px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+
+}
+.header-banner{
+  width: 1190px;
+  margin: 0 auto;
+
+}
+.header .header-left{
+  padding-top: 33px;
+padding-bottom: 28px;
+  float: left;
+}
+.header .header-left a{
+  display: block;
+  width: 200px;
+  height: 50px;
+  background:url("../images/spirite.png") no-repeat 0 0;
+}
+.header .header-right{
+width: 824px;
+height: 100px;
+float: right;
+position: relative;
+}
+.header .header-right ul li{
+  float: left;
+}
+.header .header-right .reg-login{
+  position:absolute;
+  top: 14px;
+  right: 0;
+  color: #9f9f9f;
+  font-size: 14px;
+}
+.header-right .reg-login a{
+  color: #9f9f9f;
+}
+.header-right .reg-login span{
+  padding: 0 10px;
+}
+.header-right .reg-login a:hover{
+  text-decoration: none;
+  color: #ef4222;
+}
+.header-right .reg-login .shopCar{
+  padding-left: 20px;
+  width:70px;
+}
+.header-right .reg-login .shopCar b{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../images/spirite.png") no-repeat -216px -5px;
+  vertical-align: middle;
+}
+.reg-login .shopCar em{
+  font-style: normal;
+  color: #ef4222;
+  }
+  .reg-login .shopCar:hover b{
+  background: url("../images/spirite.png") no-repeat -262px -5px;
+}
+.header-right .nav{
+  position: absolute;
+  top:62px;
+  left: 0;
+}
+.header-right .nav li{
+  margin-right: 56px;
+  font-size: 18px;
+}
+.header-right .nav li:hover>a{
+  text-decoration: none;
+  color: #ef4222;
+}
+.header-right .nav li:nth-child(2){
+  padding-bottom: 40px;
+}
+.header-right .nav li:nth-child(2):hover .mPhone{
+  display: block;
+}
+.header-right .nav li:last-child{
+  margin-right: 0;
+  /* color: red; */
+}
+.header-right .search{
+  border:1px solid #ccc;
+  width: 173px;
+  height: 28px;
+  position: absolute;
+  bottom:12px;
+  right: -12px;
+  /*过板心了*/
+}
+.header-right .search input[type="text"]{
+  width: 146px;
+  height: 28px;
+  /* border:1px solid #ccc; */
+  vertical-align: middle;
+}
+.header-right .search input[type="submit"]{
+  width: 19px;
+  height: 18px;
+  /* border:1px solid #ccc; */
+  background: url("../images/spirite.png") no-repeat -239px -4px;
+  vertical-align: middle;
+}
+.header-right .search input[type="submit"]:hover{
+  cursor: pointer;
+}
+.nav .mPhone{
+/*  height: 500px; */
+  background: #fff;
+  width: 100%;
+  /* margin-top: 103px; */
+  position: fixed;
+  left: 0;
+  top:106px;
+  display: none;
+
+}
+.nav .mPhone .mPhone-banner {
+  width: 1190px;
+  margin: 0 auto;
+  padding-top: 28px;
+}
+.nav .mPhone-banner dl{
+  float: left;
+  margin-right: 120px;
+}
+.nav .mPhone-banner dl dt{
+  font-size: 16px;
+  color: #767979;/*该更深*/
+  margin-bottom: 30px;
+}
+.nav .mPhone-banner dl dt:hover{
+  cursor: pointer;
+}
+.nav .mPhone-banner dl dd{
+  margin-bottom: 17px;
+  font-size: 12px;
+}
+.mPhone-banner dl dd:hover a{
+  cursor: pointer;
+  color: #ef4222;
+  text-decoration: none;
+}
+.mPhone-banner dl dd a{
+  color: #979a9a;
+}
+/* 头部样式结束 */
+
+/* 大图片部分开始 */
+.banner{
+  width: 100%;
+  height: 640px;
+  margin-top: 105px;
+  /* background: skyblue; */
+  position: relative;
+}
+.banner-w{
+  /* width: 1190px; */
+  margin: 0 auto;
+}
+.banner-w ul li{
+  float: left;
+  width: 100%;
+  }
+  .banner-w ul li .one{
+  display: block;
+  height: 640px;
+  background: url("../images/one.jpg") no-repeat top center;
+}
+.banner-w ul li .two{
+  display: none;
+  height: 640px;
+  background: url("../images/two.jpg") no-repeat top center;
+}
+.banner .banner-right,.banner .banner-left{
+  width: 30px;
+  height: 50px;
+  /* background: pink; */
+}
+.banner .banner-right{
+  position: absolute;
+  background: url("../images/left.png") no-repeat ;
+  top:50%;
+  left: 65px;
+  margin-top: -20px;
+}
+.banner .banner-left{
+  position: absolute;
+  background: url("../images/right.png") no-repeat ;
+  top:50%;
+  right: 65px;
+  margin-top: -20px;
+  }
+  .banner-w .qh li{
+  float: left;
+  width: 50px;
+  height: 4px;
+  background: #fff;
+  margin-right: 14px;
+}
+.banner-w .qh li:first-child{
+  background: #ff6a00;
+}
+.banner-w .qh li:last-child{
+  margin-right: 0;
+}
+.banner-w .qh{
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  margin-left: -57px;
+}
+/* 大图片部分结束 */
+
+/* 明星产品开始 */
+.starProduct{
+  width: 100%;
+  background: #fff;
+}
+.starProduct-banner{
+  width: 1190px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 56px;
+}
+.starProduct-banner h2{
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 26px;
+}
+.starProduct-banner ul li{
+  float: left;
+  margin-right: 10px;
+}
+.starProduct-banner ul li:last-child{
+  margin-right: 0;
+}
+/* 明星产品介绍结束*/
+
+/*热卖推荐开始*/
+.hotProduct{
+  width: 100%;
+  background:#e5e5e5;
+}
+.hotProduct-banner{
+  width: 1190px;
+  margin: 0 auto;
+  padding-top: 30px;
+
+}
+.hotProduct-banner h2{
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+ /* padding-bottom: 24px;*/
+}
+.hotProduct-banner p {
+height: 36px;
+line-height: 36px;
+text-align: right;
+margin-bottom: 11px;
+}
+.hotProduct-banner p:hover a{
+  text-decoration: none;
+  color: #ef4222;
+  font-size: 14px;
+}
+.hotProduct-banner .hotProduct-left{
+width: 305px;
+  height: 785px;
+  /* background-color: pink; */
+  float: left;
+}
+.hotProduct-banner .hotProduct-left img{
+    transition:all 0.5s ease-out;
+  -moz-transition: all ease-out .5s;
+}
+.hotProduct-banner .hotProduct-left img:hover{
+  box-shadow: 0 12px  25px rgba(0,0,0,.2);
+  transform:translateY(-2px);
+  -moz-transform: translateY(-2px);
+}
+.hotProduct-banner .hotProduct-right{
+  width: 880px;
+  height: 785px;
+  /* background-color: skyblue; */
+  float: right;
+}
+.hotProduct-banner .hotProduct-right ul li{
+  float: left;
+}
+.hotProduct-right ul li{
+  margin-right:5px;
+  position: relative;
+  transition:all 0.5s ease-out;
+  -moz-transition: all ease-out .5s;
+}
+/*css3*/
+.hotProduct-right ul li:hover{
+  box-shadow: 0 12px  25px rgba(0,0,0,.2);
+  transform:translateY(-2px);
+  -moz-transform: translateY(-2px);
+}
+.hotProduct-right ul li .des{
+  /*height: 140px;*/
+  width: 100%;
+  padding-top: 25px;
+  position: absolute;
+  bottom: 0;
+  left:0;
+}
+.hotProduct-right ul li .des:hover{
+  cursor: pointer;
+}
+.hotProduct-right ul li .des .name{
+  height: 28px;
+  line-height: 28px;
+  font-size: 16px;
+  text-align: center;
+}
+.hotProduct-right ul li .des .con{
+  font-size: 14px;
+  height: 26px;
+  line-height: 26px;
+  color: #9e9e9e;
+  text-align: center;
+}
+.hotProduct-right ul li .des .price{
+  font-size: 20px;
+  height: 56px;
+  line-height: 56px;
+  text-align: center;
+  color: #fe6a00;
+  position: relative;
+}
+.hotProduct-right ul li .des .price em{
+  font-style: normal;
+  font-size: 12px;
+  position: absolute;
+  right: 76px;
+  top:-6px;
+  color: #f26261;
+}
+.hotProduct-right ul li:nth-child(3){
+  margin-right: 0;
+}
+.hotProduct-right ul li:last-child{
+  margin-right: 0;
+}
+
+/*热卖推荐结束*/
+
+/*精美配件开始*/
+.acc{
+  width: 100%;
+  background:#e5e5e5;
+}
+.acc-banner{
+  width: 1190px;
+  margin: 0 auto;
+   padding-top: 34px;
+   padding-bottom: 59px;
+}
+.acc-banner h2{
+  font-size: 30px;
+  font-weight: 500;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+   padding-bottom: 24px;
+}
+.acc-banner p{
+  height: 34px;
+  line-height: 34px;
+  text-align: right;
+  margin-bottom: 10px;
+}
+.acc-banner p:hover a{
+  text-decoration: none;
+  color: #ef4222;
+  font-size: 14px;
+}
+.acc-banner ul li{
+  float: left;
+  margin-right: 16px;
+  margin-bottom: 17px;
+  position: relative;
+    transition:all 0.5s ease-out;
+  -moz-transition: all ease-out .5s;
+}
+.acc-banner ul li:hover{
+   box-shadow: 0 12px  25px rgba(0,0,0,.2);
+  transform:translateY(-2px);
+  -moz-transform: translateY(-2px);
+}
+.acc-banner ul li:nth-child(3){
+  margin-right: 0;
+}
+.acc-banner ul li:last-child{
+  margin-right: 0;
+}
+.acc-banner ul li .desc{
+
+  /*height: 140px;*/
+  width: 100%;
+  padding-bottom: 10px;
+  position: absolute;
+bottom: 0;
+}
+.acc-banner ul li .desc:hover{
+  cursor: pointer;
+}
+.acc-banner ul li .desc .name2{
+  height: 24px;
+  line-height: 24px;
+font-size: 16px;
+text-align: center;
+}
+.acc-banner ul li .desc .con2{
+  height: 18px;
+  line-height: 18px;
+  font-size: 14px;
+  text-align: center;
+  color: #9e9e9e;
+}
+.acc-banner ul li .desc .price2{
+  height: 24px;
+  line-height: 24px;
+  font-size: 20px;
+  text-align: center;
+  color: #f17170;
+}
+/*品牌动态开始*/
+.dynamic{
+  width: 100%;
+  background:#fff;
+}
+.dynamic-banner{
+  width: 1190px;
+  margin: 0 auto;
+   padding-top:30px;
+}
+.dynamic-banner h2{
+  font-size: 30px;
+  font-weight: 500;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+   padding-bottom: 26px;
+}
+.dynamic-banner ul li {
+  float: left;
+  margin-right:14px;
+}
+.dynamic-banner ul li:last-child{
+  margin-right:0;
+}
+
+/*品牌动态结束*/
+
+/*售后图标开始*/
+.saleAfter{
+width: 100%;
+  background:#fff;
+  border-bottom: 1px solid #eaeaea;
+}
+.saleAfter-banner{
+   width: 1190px;
+  margin: 0 auto;
+   padding-top:78px;
+  padding-bottom: 42px;
+}
+.saleAfter-banner ul li{
+  float: left;
+  width: 25%;
+}
+.saleAfter-banner ul li a{
+  text-decoration: none;
+}
+.saleAfter-banner ul li a:hover em{
+  color: #ef4222;
+  cursor: pointer;
+}
+.saleAfter-banner ul li i{
+  float: left;
+  width: 46px;
+  height: 46px;
+  margin-right: 12px;
+}
+.saleAfter-banner ul li em{
+  font-style: normal;
+  color: #777;
+  font-size: 16px;
+}
+.saleAfter-banner .one{
+  background: url("../images/spirite.png") no-repeat 0  -61px;
+}
+.saleAfter-banner .two{
+  background: url("../images/spirite.png") no-repeat -46px  -61px;
+
+}
+.saleAfter-banner .three{
+  background: url("../images/spirite.png") no-repeat -92px  -61px;
+}
+.saleAfter-banner .four{
+  background: url("../images/spirite.png") no-repeat -138px -61px;
+}
+/*售后图标结束*/
+
+
+/* 底部导航开始 */
+.footer-Info{
+  width: 100%;
+  background: #fff;
+}
+.footer-Info-banner{
+  width: 1190px;
+  margin: 0 auto;
+  /*height: 252px;*/
+  padding-bottom: 40px;
+  position: relative;
+}
+.footer-Info-banner dl{
+  float: left;
+  margin-right: 150px;
+  padding-top: 20px;
+}
+.footer-Info-banner dl:first-child{
+  margin-right: 101px;
+}
+.footer-Info-banner dl:last-child{
+  margin-right: 0;
+}
+.footer-Info-banner dl dt{
+  height: 36px;
+  line-height: 36px;
+  font-size: 16px;
+  color: #777;
+}
+.footer-Info-banner dl dd{
+height: 32px;
+line-height: 32px;
+font-size: 12px;
+}
+.footer-Info-banner dl dd a{
+  text-decoration: none;
+  color: #777;
+}
+.footer-Info-banner dl dd:hover a{
+  color: #ef4222;
+}
+.footer-Info-banner dl dd .sina{
+  display:inline-block;
+  width: 25px;
+  height: 23px;
+  background: url("../images/spirite.png") no-repeat -379px  -66px;
+  vertical-align: middle;
+}
+.footer-Info-banner dl dd .Tenc{
+  display:inline-block;
+  width: 22px;
+  height: 18px;
+  background: url("../images/spirite.png") no-repeat -404px  -67px;
+  vertical-align: middle;
+}
+.footer-Info-banner dl dd .QQ{
+  display:inline-block;
+  width: 25px;
+  height: 23px;
+  background: url("../images/spirite.png") no-repeat -428px  -65px;
+  vertical-align: middle;
+}
+.footer-Info-banner dl dd:hover .sina{
+  background: url("../images/spirite.png") no-repeat -379px  -91px;
+}
+.footer-Info-banner dl dd:hover .Tenc{
+  background: url("../images/spirite.png") no-repeat -404px  -93px;
+}
+.footer-Info-banner dl dd:hover .QQ{
+  background: url("../images/spirite.png") no-repeat -428px  -93px;
+}
+.footer-Info-banner .eCord{
+  background: url("../images/spirite.png") no-repeat -278px  0;
+  width: 98px;
+  height: 98px;
+  border: 3px solid #ccc;
+  position: absolute;
+  right: 10px;
+  top: 30px;
+}
+.footer-Info-banner .eCord span{
+  font-size: 12px;
+  color: #999;
+  position: absolute;
+  bottom: -20px;
+  right: 6px;
+}
+/* 底部导航结束 */
+
+/*底部开始*/
+.footer{
+  width: 100%;
+  background: #333;
+}
+.footer-banner{
+   width: 1190px;
+  margin: 0 auto;
+  height: 156px;
+  position: relative;
+}
+.footer-banner p:first-child{
+  height: 42px;
+  line-height: 42px;
+  font-size: 12px;
+  color: #999;
+}
+.footer-banner p:first-child span{
+  padding: 0 11px;
+}
+.footer-banner p:nth-child(2){
+  height: 42px;
+  line-height: 42px;
+  font-size: 12px;
+  color: #999;
+}
+.footer-banner .bq-info{
+  height: 46px;
+  line-height: 46px;
+  font-size: 12px;
+  color: #999;
+}
+.footer-banner p .pl img{
+  /* display: inline-block; */
+  width: 35px;
+  height: 45px;
+  vertical-align: middle;
+  margin-left: 12px;
+}
+.footer-banner p .gg img{
+  vertical-align: middle;
+}
+.footer-banner .lang{
+  width: 102px;
+  height: 24px;
+  line-height: 24px;
+  color: #999;
+  position: absolute;
+  right: 0;
+  top:51px;
+  background: #474747;
+  font-size: 14px;
+  padding:0 6px;
+  border-radius: 3px; /*圆角*/
+}
+/*底部结束*/
+
+/*侧边导航开始*/
+.service{
+  position: fixed;
+  top:178px;
+  right:6px;
+  background: #fff;
+  border:1px solid #ddd;
+}
+.service ul li{
+  width: 58px;
+  height: 68px;
+  border-bottom: 1px solid #ddd;
+}
+.service ul li:last-child{
+  border-bottom: none;
+  padding-bottom: 4px;
+}
+.service ul li:last-child a{
+  padding-top: 48px;
+}
+.service ul li a{
+  position: relative;
+  display: block;
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 40px;
+}
+.service ul li:hover a{
+  text-decoration: none;
+  color: #ef4222;
+}
+.service ul li:last-child:hover a{
+  color: #000;
+}
+.service ul li span{
+  position: absolute;
+  top:11px;
+  left:16px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("../images/ui_service.png") no-repeat 0 0;
+}
+.service ul li .help span{
+  background: url("../images/ui_service.png") no-repeat -32px -2px;
+}
+.service ul li .rTop span{
+  background: url("../images/ui_service.png") no-repeat -64px -4px;
+}
+.service ul li:hover .online span{
+  background: url("../images/ui_service.png")no-repeat -2px -31px;
+}
+.service ul li:hover .help span{
+  background: url("../images/ui_service.png")no-repeat -33px -32px;
+}
+.service ul li:hover .rTop span{
+  background: url("../images/ui_service.png")no-repeat -64px -31px;
+}
+.service ul li img{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top:210px;
+  left:5px;
+}
+/*侧边导航结束*/

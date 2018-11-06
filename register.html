@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/base.css">
+        <link rel="stylesheet" type="text/css" href="css/register.css">
+        <script src="js/jquery.min.js"></script>
+    </head>
+    <body>
+    <!-- 注册页头部开始-->
+    <div class="header">
+        <div class="header-banner">
+          <a href="#"><img src="images/login_logo.png"></a>
+        </div>
+    </div>
+    <!-- 注册页头部结束 -->
+
+    <!-- 注册页内容开始 -->
+<div class="content">
+      <div class="content-banner clearfix">
+        <div class="box"><a href="#"></a></div>
+            <div class="loginbox">
+                <h2>欢迎注册</h2>
+                  <ul>
+                    <li class="logintext">登录名:</li>
+                    <li><input type="text" id="userName"></li>
+                        <span id="userNameMsg"></span>
+                    <li class="logintext">密码:</li>
+                    <li><input type="password" id="userPassWord"></li>
+                        <span id="userPassWordMsg"></span>
+                    <li class="logintext" >确认密码:</li>
+                    <li><input type="password"id="userPassWordAg"></li>
+                    <span id="userPassWordAgMsg"></span>
+                    <li class="logintext">验证码:</li>
+                    <li class="yCord"><input type="text" ><img src="images/img.jpg" ><a href="#">换一张</a></li>
+                      <li class="anwes">
+                    <label for="agree">
+                        <input type="checkbox" class="agree" id="agree">
+                        <i>我已阅读并同意</i>&nbsp;
+                       </label>
+                       <a href="#">网站服务条款</a>
+                    </li>
+                     <input type="submit" class="loginSubmit" value="立即注册">
+                    </ul>
+                    <div class="other">已有账户？<a href="#">直接登录></a></div>
+            </div>
+      </div>
+    </div>
+    <!-- 注册页内容结束 -->
+
+    <!-- 注册页底部开始 -->
+<div class="footer">
+    <p>服务热线：400-779-6666 <span>|</span> <a href="#">隐私保护</a><span>|</span><a href="#"> 网站地图</a></p>
+    <p>Copyright © 2013 深圳市金立通信设备有限公司 版权所有 粤ICP备05087105号</p>
+</div>
+<!-- 注册页底部结束 -->
+<script type="text/javascript">
+        $(function(){
+            //验证登录名
+                $("#userName").focus(function(){
+                        $("#userNameMsg").text('3-10位的字母、数字和下划线组成').css("color","#ccc");
+                })
+                $("#userName").blur(function(){
+                    checkName();
+                });
+                function checkName(){
+                    var userName =$("#userName").val();
+                    var reg =/^(\w){3,10}$/ ;
+                    if(!reg.test(userName)){
+                        $("#userNameMsg").text('用户名错误').css("color","red");
+                       return true;
+                    }else{
+                        $("#userNameMsg").text('用户名可用').css("color","red");
+                       return false;
+                    }
+                }
+                //验证输入密码
+                $("#userPassWord").focus(function(){
+                    $("#userPassWordMsg").text('6-20位的以字母开头、数字、下划线和点“.”组成').css("color","#ccc");
+                })
+                $("#userPassWord").blur(function(){
+                        checkPassWord();
+                });
+                function checkPassWord(){
+                    var userPassWord = $("#userPassWord").val();
+                    var reg2 = /^[A-Za-z]{1}([A-Za-z0-9]|[._]){5,19}$/;
+                    // alert(reg2.test(userPassWord))
+                    if(reg2.test(userPassWord)){
+                        $("#userPassWordMsg").text('密码可用').css("color","red");
+                        return true;
+                    }else{
+                        $("#userPassWordMsg").text('密码格式不正确').css("color","red");
+                       return false;
+                     }
+                }
+                //验证确认密码
+                $("#userPassWordAg").blur(function(){
+                    checkPassWordAg();
+                })
+                function  checkPassWordAg(){
+                    var userPassWord = $("#userPassWord").val();
+                    var userPassWordAg = $("#userPassWordAg").val();
+                    if(userPassWordAg == userPassWord){
+                        $("#userPassWordAgMsg").text('密码一致').css("color","red");
+                        return true;
+                    }else{
+                         $("#userPassWordAgMsg").text('密码不一致').css("color","red");
+                        return false;
+                    }
+                }
+        })
+</script>
+    </body>
+</html>
